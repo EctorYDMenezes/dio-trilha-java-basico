@@ -48,7 +48,8 @@ O programa simula a abertura de uma conta bancária, onde o usuário insere suas
 1. **Clone o repositório:**
 
 ```bash
-git clone https://github.com/EctorYDMenezes/ContaBanco-DIO.git
+git clone https://github.com/EctorYDMenezes/dio-trilha-java-basico.git
+
 ```
 
 2. **Compile o código:**
