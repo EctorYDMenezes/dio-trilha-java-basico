@@ -15,16 +15,32 @@ O programa simula a abertura de uma conta bancária, onde o usuário insere suas
 ## 📂 Estrutura do Código
 
 ```java
-Scanner scanner = new Scanner(System.in);
-Locale.setDefault(Locale.US);
+//Incialização da biblioteca Scanner, para assim pser feita a inserção dos valores via terminal
+        Scanner scanner = new Scanner(System.in);
+        
+        //Importação  necessária para a leitura de '.' como separador da casa decimal como proposta no desafio!
+        Locale.setDefault(Locale.US);
 
-int numero = scanner.nextInt();
-String agencia = scanner.next();
-scanner.nextLine(); // limpar buffer
-String nomeCliente = scanner.nextLine();
-double saldo = scanner.nextDouble();
+        System.out.println("Bom dia, vamos seguir com o seu cadastro no banco DIO, por favor sigas os passos seguintes: ");
+        
+        //Inserir o valor do ID
+        System.out.println("Informe o seu número de acesso: ");
+        var numero = scanner.nextInt();
+        
+        //Inserir o número da agência
+        System.out.println("Informe o número da sua agência: ");
+        var agencia = scanner.next();
+        scanner.nextLine();
+        
+        //Inserir o nome
+        System.out.println("Informe o seu nome: ");
+        var nomeCliente = scanner.nextLine();
+        
+        //Inserir o valor do saldo dsiponível
+        System.out.println("Informe o saldo disponível em R$: ");
+        var saldo = scanner.nextDouble();
 
-System.out.printf("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %s e seu saldo de R$%.2f já está disponível para saque", nomeCliente, agencia, numero, saldo);
+        System.out.printf("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %s e seu saldo de R$%.2f já está disponível para saque", nomeCliente, agencia, numero, saldo);
 ```
 
 ## ▶️ Como Executar o Projeto
